@@ -34,6 +34,24 @@
     aboutCvFrame.src = aboutCvFrame.getAttribute("data-src") || "";
   }
 
+  document.querySelectorAll("[data-cv-toggle]").forEach(function (toggle) {
+    var panel = document.getElementById(toggle.getAttribute("aria-controls"));
+    if (!panel) return;
+
+    toggle.addEventListener("click", function () {
+      var isOpen = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!isOpen));
+      panel.hidden = isOpen;
+
+      if (!isOpen) {
+        var frame = panel.querySelector(".cv-frame[data-src]");
+        if (frame && !frame.getAttribute("src")) {
+          frame.src = frame.getAttribute("data-src") || "";
+        }
+      }
+    });
+  });
+
   var localBgVideo = document.querySelector(".hero-video-local");
   var youtubeBgVideo = document.querySelector(".hero-video-youtube");
 

@@ -626,6 +626,89 @@ main {
   margin-top: 0.9rem;
 }
 
+.cv-toggle-section {
+  margin-top: 1.4rem;
+}
+
+.cv-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: "Bebas Neue", Impact, sans-serif;
+  letter-spacing: 0.04em;
+  font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s ease;
+}
+
+.cv-toggle:hover {
+  border-color: rgba(255, 255, 255, 0.54);
+}
+
+.cv-toggle-icon {
+  position: relative;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+
+.cv-toggle-icon::before,
+.cv-toggle-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+}
+
+.cv-toggle-icon::before {
+  width: 12px;
+  height: 2px;
+}
+
+.cv-toggle-icon::after {
+  width: 2px;
+  height: 12px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.cv-toggle[aria-expanded="true"] .cv-toggle-icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+  opacity: 0;
+}
+
+.cv-panel {
+  margin-top: 0.9rem;
+}
+
+.cv-panel[hidden] {
+  display: none;
+}
+
+.cv-frame {
+  width: 100%;
+  min-height: 640px;
+  border: 0;
+  border-radius: 14px;
+  background: rgba(4, 13, 30, 0.82);
+}
+
+.cv-mobile-link {
+  display: none;
+  margin-top: 0.9rem;
+}
+
 .section-card.about-contact-card,
 .section-card.about-cv-card {
   border: 0;
@@ -841,6 +924,15 @@ main {
   }
 
   .about-cv-mobile-link {
+    display: inline-flex;
+  }
+
+  .cv-frame {
+    min-height: 520px;
+    display: none;
+  }
+
+  .cv-mobile-link {
     display: inline-flex;
   }
 
