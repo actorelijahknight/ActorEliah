@@ -19,6 +19,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Manrope", "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   color: var(--text);
   background: radial-gradient(circle at 18% -28%, #123a78 0, #0a2d5f 38%, #041428 100%);
   min-height: 100vh;
@@ -481,12 +486,14 @@ main {
 .page-hero p {
   margin: 0.9rem 0 0;
   max-width: 60ch;
+  font-size: 1.05rem;
   color: var(--muted);
 }
 
 .about-superpowers {
   margin: 0.9rem 0 0;
   max-width: 60ch;
+  font-size: 1.05rem;
   color: var(--muted);
   padding-left: 1.2rem;
 }
