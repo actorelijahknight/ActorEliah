@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Film | Elijah Knight</title>
-    <meta name="description" content="Filmography and showreel for Elijah Knight." />
+    <title>Reels | Elijah Knight</title>
+    <meta name="description" content="Showreels for Elijah Knight in English, German, and French, plus comedy and action/stunt reels." />
+    <link rel="icon" type="image/png" href="assets/FavIcon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,8 +18,11 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="index.html">
-          <span class="brand-title">Elijah Knight</span>
-          <span class="brand-subtitle">Actor - Speaker - Coach</span>
+          <img class="brand-logo" src="assets/KnightTVwhiteTransparent.png" alt="Elijah Knight logo" />
+          <span class="brand-text">
+            <span class="brand-title">Elijah Knight</span>
+            <span class="brand-subtitle">Actor - Speaker - Coach</span>
+          </span>
         </a>
         <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" data-menu-toggle>
           <span></span><span></span><span></span>
@@ -26,7 +30,14 @@
         <nav class="main-nav" aria-label="Main navigation" data-main-nav>
           <ul class="nav-list">
             <li><a class="nav-link" href="about.html">About Me</a></li>
-            <li><a class="nav-link" href="film.html">Film</a></li>
+            <li class="nav-item has-submenu">
+              <a class="nav-link" href="reels.html">Film &amp; TV</a>
+              <ul class="subnav">
+                <li><a class="nav-link subnav-link" href="reels.html">Reels</a></li>
+                <li><a class="nav-link subnav-link" href="films-tv-shows.html">Films &amp; TV Shows</a></li>
+                <li><a class="nav-link subnav-link" href="in-production.html">In Production</a></li>
+              </ul>
+            </li>
             <li><a class="nav-link" href="speaker.html">Speaker</a></li>
             <li><a class="nav-link" href="commercial.html">Commercial</a></li>
             <li><a class="nav-link" href="coaching.html">Coaching</a></li>
@@ -38,51 +49,82 @@
 
     <main>
       <section class="page-hero plain-hero">
-        <h1>Film</h1>
+        <h1>Reels</h1>
         <p>
-          A selected glimpse of past work: four short visual excerpts to illustrate range, tone, and on-screen presence.
+          Showreels by language, plus genre-focused reels for comedy and action &amp; stunts. Each clip plays muted on
+          load — use the player's sound control to watch with audio.
         </p>
       </section>
 
-      <section class="film-grid" aria-label="Featured film reels">
-        <article class="film-bubble">
-          <video autoplay muted loop playsinline preload="metadata">
-            <source src="assets/film-1.mp4" type="video/mp4" />
-          </video>
-          <div class="film-bubble-overlay"></div>
-          <div class="film-bubble-label">
-            <h2>L'assurance au travail</h2>
+      <section class="video-grid" aria-label="Showreels">
+        <article class="video-card">
+          <div class="video-card-frame">
+            <iframe
+              src="https://www.youtube.com/embed/AkUokCFmMkc?autoplay=1&mute=1&loop=1&playlist=AkUokCFmMkc&controls=1&modestbranding=1&rel=0&playsinline=1"
+              title="English Reel"
+              frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
+          <h2>English Reel</h2>
+          <p>Showreel highlighting film and TV work in English.</p>
         </article>
 
-        <article class="film-bubble">
-          <video autoplay muted loop playsinline preload="metadata">
-            <source src="assets/film-2.mp4" type="video/mp4" />
-          </video>
-          <div class="film-bubble-overlay"></div>
-          <div class="film-bubble-label">
-            <h2>Pas Assez (produit par Knight TV)</h2>
+        <article class="video-card">
+          <div class="video-card-frame">
+            <iframe
+              src="https://www.youtube.com/embed/aD1M1_c0wr4?autoplay=1&mute=1&loop=1&playlist=aD1M1_c0wr4&controls=1&modestbranding=1&rel=0&playsinline=1"
+              title="Deutsch Demoband"
+              frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
+          <h2>Deutsch Demoband</h2>
+          <p>Demoband featuring work in German and Swiss German.</p>
         </article>
 
-        <article class="film-bubble">
-          <video autoplay muted loop playsinline preload="metadata">
-            <source src="assets/film-3.mp4" type="video/mp4" />
-          </video>
-          <div class="film-bubble-overlay"></div>
-          <div class="film-bubble-label">
-            <h2>Action Reel</h2>
+        <article class="video-card">
+          <div class="video-card-frame">
+            <iframe
+              src="https://www.youtube.com/embed/B55CzfbQBMU?autoplay=1&mute=1&loop=1&playlist=B55CzfbQBMU&controls=1&modestbranding=1&rel=0&playsinline=1"
+              title="Français Bande-démo"
+              frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
+          <h2>Français Bande-démo</h2>
+          <p>Demo reel featuring work in French.</p>
         </article>
 
-        <article class="film-bubble">
-          <video autoplay muted loop playsinline preload="metadata">
-            <source src="assets/film-4.mp4" type="video/mp4" />
-          </video>
-          <div class="film-bubble-overlay"></div>
-          <div class="film-bubble-label">
-            <h2>Der Letzte Atemzug</h2>
+        <article class="video-card">
+          <div class="video-card-frame">
+            <iframe
+              src="https://www.youtube.com/embed/HCDXPFodMSM?autoplay=1&mute=1&loop=1&playlist=HCDXPFodMSM&controls=1&modestbranding=1&rel=0&playsinline=1"
+              title="Comedy Reel"
+              frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
           </div>
+          <h2>Comedy Reel</h2>
+          <p>A collection of comedic performances.</p>
+        </article>
+
+        <article class="video-card">
+          <div class="video-card-frame">
+            <iframe
+              src="https://www.youtube.com/embed/XVCTJbWbDWE?autoplay=1&mute=1&loop=1&playlist=XVCTJbWbDWE&controls=1&modestbranding=1&rel=0&playsinline=1"
+              title="Action & Stunts Reel"
+              frameborder="0"
+              allow="autoplay; encrypted-media; picture-in-picture"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+          <h2>Action &amp; Stunts Reel</h2>
+          <p>Action and stunt work, performed personally.</p>
         </article>
       </section>
     </main>

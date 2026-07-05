@@ -8,6 +8,7 @@
       name="description"
       content="Official website of actor, speaker, and coach Elijah Knight."
     />
+    <link rel="icon" type="image/png" href="assets/FavIcon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,8 +21,11 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="index.html">
-          <span class="brand-title">Elijah Knight</span>
-          <span class="brand-subtitle">Actor - Speaker - Coach</span>
+          <img class="brand-logo" src="assets/KnightTVwhiteTransparent.png" alt="Elijah Knight logo" />
+          <span class="brand-text">
+            <span class="brand-title">Elijah Knight</span>
+            <span class="brand-subtitle">Actor - Speaker - Coach</span>
+          </span>
         </a>
 
         <button
@@ -39,7 +43,14 @@
         <nav class="main-nav" aria-label="Main navigation" data-main-nav>
           <ul class="nav-list">
             <li><a class="nav-link" href="about.html">About Me</a></li>
-            <li><a class="nav-link" href="film.html">Film</a></li>
+            <li class="nav-item has-submenu">
+              <a class="nav-link" href="reels.html">Film &amp; TV</a>
+              <ul class="subnav">
+                <li><a class="nav-link subnav-link" href="reels.html">Reels</a></li>
+                <li><a class="nav-link subnav-link" href="films-tv-shows.html">Films &amp; TV Shows</a></li>
+                <li><a class="nav-link subnav-link" href="in-production.html">In Production</a></li>
+              </ul>
+            </li>
             <li><a class="nav-link" href="speaker.html">Speaker</a></li>
             <li><a class="nav-link" href="commercial.html">Commercial</a></li>
             <li><a class="nav-link" href="coaching.html">Coaching</a></li>
@@ -84,28 +95,31 @@
         <div class="hero-ticker" aria-label="Latest news ticker">
           <div class="hero-ticker-track">
             <span>Celebrated World Premiere of my first self-produced film at Berlinale!</span>
+            <span>Knight TV Production WTF Davos nominated as Finalist for &ldquo;Best Comedy Short&rdquo; in Cannes 2026.</span>
+            <span>THE TRUTH starring Elijah Knight just Premiered at The Filmzyt Festival in Bern.</span>
             <span>Celebrated World Premiere of my first self-produced film at Berlinale!</span>
-            <span>Celebrated World Premiere of my first self-produced film at Berlinale!</span>
+            <span>Knight TV Production WTF Davos nominated as Finalist for &ldquo;Best Comedy Short&rdquo; in Cannes 2026.</span>
+            <span>THE TRUTH starring Elijah Knight just Premiered at The Filmzyt Festival in Bern.</span>
           </div>
         </div>
       </section>
 
       <section class="metrics" aria-label="Career highlights">
         <article class="metric">
-          <strong class="metric-value" data-target="4" data-suffix="+">0</strong>
-          <span>Feature Films</span>
+          <strong class="metric-value" data-target="8" data-suffix="+">0</strong>
+          <span>Feature films and TV Shows</span>
         </article>
         <article class="metric">
-          <strong class="metric-value" data-target="20" data-suffix="+">0</strong>
+          <strong class="metric-value" data-target="15" data-suffix="+">0</strong>
           <span>Short Films</span>
         </article>
         <article class="metric">
-          <strong class="metric-value" data-target="20" data-suffix="+">0</strong>
+          <strong class="metric-value" data-target="21" data-suffix="+">0</strong>
           <span>Commercial Productions</span>
         </article>
         <article class="metric">
           <strong class="metric-value" data-target="20" data-suffix="+">0</strong>
-          <span>Public Speaking Gigs</span>
+          <span>Hosted Events</span>
         </article>
       </section>
 
