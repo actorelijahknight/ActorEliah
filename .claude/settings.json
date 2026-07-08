@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/124.0.0.0 Safari/537.36\" \"https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap\")",
+      "Bash(mkdir -p assets/fonts)",
+      "Bash(curl -sL -o assets/fonts/bebas-neue-v16-latin-400.woff2 \"https://fonts.gstatic.com/s/bebasneue/v16/JTUSjIg69CK48gW7PXoo9Wlhyw.woff2\")",
+      "Bash(curl -sL -o assets/fonts/manrope-v20-latin-variable.woff2 \"https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2\")",
+      "Bash(curl -sI http://localhost:8791/assets/fonts/bebas-neue-v16-latin-400.woff2)",
+      "Bash(curl -sI http://localhost:8791/assets/fonts/manrope-v20-latin-variable.woff2)",
+      "Bash(curl -s http://localhost:8791/index.html)",
+      "Bash(curl -s http://localhost:8791/assets/)",
+      "Bash(pkill -f \"http.server 8791\")",
+      "Bash(npx --yes playwright --version)",
+      "Bash(node -e \"require\\('playwright'\\)\")",
+      "Bash(node -e \"console.log\\(require.resolve\\('playwright'\\)\\)\")",
+      "Bash(npm ls *)",
+      "Bash(mkdir -p /c/Users/dnadr/AppData/Local/Temp/claude/verify-pw)",
+      "Read(//c/Users/dnadr/AppData/Local/Temp/claude/**)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Read(//tmp/**)",
+      "Read(//c/Users/dnadr/AppData/Local/Temp/claude/verify-pw/**)",
+      "Bash(npx playwright *)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(node check.js)",
+      "Bash(pkill -f \"http.server 8792\")"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\dnadr\\AppData\\Local\\Temp\\claude\\verify-pw"
+    ]
+  }
+}

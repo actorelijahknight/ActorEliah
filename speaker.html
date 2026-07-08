@@ -6,12 +6,6 @@
     <title>Speaker | Elijah Knight</title>
     <meta name="description" content="Speaking profile and topics of Elijah Knight." />
     <link rel="icon" type="image/png" href="assets/FavIcon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="mobile-center-title">
@@ -79,26 +73,36 @@
       <section class="video-grid" aria-label="Speaking highlights">
         <article class="video-card">
           <div class="video-card-frame">
-            <iframe
-              src="https://www.youtube.com/embed/8Z9NvhGhxAE?autoplay=1&mute=1&loop=1&playlist=8Z9NvhGhxAE&controls=1&modestbranding=1&rel=0&playsinline=1"
-              title="Ausgewählte Veranstaltungen auf Deutsch"
-              frameborder="0"
-              allow="autoplay; encrypted-media; picture-in-picture"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            <button
+              class="video-facade"
+              type="button"
+              data-video-facade
+              data-video-src="https://www.youtube-nocookie.com/embed/8Z9NvhGhxAE?autoplay=1&mute=1&loop=1&playlist=8Z9NvhGhxAE&controls=1&modestbranding=1&rel=0&playsinline=1"
+              data-video-title="Ausgewählte Veranstaltungen auf Deutsch"
+              aria-label="Play video: Ausgewählte Veranstaltungen auf Deutsch"
+            >
+              <img src="assets/video-thumbs/8Z9NvhGhxAE.jpg" alt="" loading="lazy" />
+              <span class="video-facade-play" aria-hidden="true"></span>
+              <span class="video-facade-consent">By playing this video, you agree to YouTube's Terms of Service and Google's Privacy Policy.</span>
+            </button>
           </div>
           <h2>Ausgewählte Veranstaltungen auf Deutsch</h2>
         </article>
 
         <article class="video-card">
           <div class="video-card-frame">
-            <iframe
-              src="https://www.youtube.com/embed/YAY8ylNpiNs?autoplay=1&mute=1&loop=1&playlist=YAY8ylNpiNs&controls=1&modestbranding=1&rel=0&playsinline=1"
-              title="Selected Hosting Engagements English"
-              frameborder="0"
-              allow="autoplay; encrypted-media; picture-in-picture"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            <button
+              class="video-facade"
+              type="button"
+              data-video-facade
+              data-video-src="https://www.youtube-nocookie.com/embed/YAY8ylNpiNs?autoplay=1&mute=1&loop=1&playlist=YAY8ylNpiNs&controls=1&modestbranding=1&rel=0&playsinline=1"
+              data-video-title="Selected Hosting Engagements English"
+              aria-label="Play video: Selected Hosting Engagements English"
+            >
+              <img src="assets/video-thumbs/YAY8ylNpiNs.jpg" alt="" loading="lazy" />
+              <span class="video-facade-play" aria-hidden="true"></span>
+              <span class="video-facade-consent">By playing this video, you agree to YouTube's Terms of Service and Google's Privacy Policy.</span>
+            </button>
           </div>
           <h2>Selected Hosting Engagements English</h2>
         </article>

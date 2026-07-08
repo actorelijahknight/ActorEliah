@@ -6,12 +6,6 @@
     <title>Commercial | Elijah Knight</title>
     <meta name="description" content="Commercial work and brand collaborations." />
     <link rel="icon" type="image/png" href="assets/FavIcon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="mobile-center-title">
@@ -62,13 +56,18 @@
       <section class="video-single" aria-label="Commercial video">
         <article class="video-card">
           <div class="video-card-frame">
-            <iframe
-              src="https://www.youtube.com/embed/yrjtbsM8TzM?autoplay=1&mute=1&loop=1&playlist=yrjtbsM8TzM&controls=1&modestbranding=1&rel=0&playsinline=1"
-              title="Commercial reel"
-              frameborder="0"
-              allow="autoplay; encrypted-media; picture-in-picture"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            <button
+              class="video-facade"
+              type="button"
+              data-video-facade
+              data-video-src="https://www.youtube-nocookie.com/embed/yrjtbsM8TzM?autoplay=1&mute=1&loop=1&playlist=yrjtbsM8TzM&controls=1&modestbranding=1&rel=0&playsinline=1"
+              data-video-title="Commercial reel"
+              aria-label="Play video: Commercial reel"
+            >
+              <img src="assets/video-thumbs/yrjtbsM8TzM.jpg" alt="" loading="lazy" />
+              <span class="video-facade-play" aria-hidden="true"></span>
+              <span class="video-facade-consent">By playing this video, you agree to YouTube's Terms of Service and Google's Privacy Policy.</span>
+            </button>
           </div>
         </article>
       </section>

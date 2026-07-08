@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/bebas-neue-v16-latin-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("assets/fonts/manrope-v20-latin-variable.woff2") format("woff2");
+}
+
 :root {
   --bg: #031632;
   --surface: transparent;
@@ -538,6 +554,68 @@ main {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.video-facade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background: #000;
+  display: block;
+}
+
+.video-facade img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+}
+
+.video-facade-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-facade-play::before {
+  content: "";
+  border-style: solid;
+  border-width: 0.6rem 0 0.6rem 1rem;
+  border-color: transparent transparent transparent #fff;
+  margin-left: 0.15rem;
+}
+
+.video-facade-consent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: var(--muted);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  text-align: center;
+}
+
+.video-facade:hover .video-facade-play,
+.video-facade:focus-visible .video-facade-play {
+  background: var(--accent-soft);
 }
 
 .video-card h2 {
