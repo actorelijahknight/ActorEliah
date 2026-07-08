@@ -23,7 +23,9 @@
       "Bash(npx playwright *)",
       "Bash(echo \"EXIT:$?\")",
       "Bash(node check.js)",
-      "Bash(pkill -f \"http.server 8792\")"
+      "Bash(pkill -f \"http.server 8792\")",
+      "Bash(ssh -T git@github.com-work -o BatchMode=yes -o ConnectTimeout=10)",
+      "Bash(git ls-remote *)"
     ],
     "additionalDirectories": [
       "C:\\Users\\dnadr\\AppData\\Local\\Temp\\claude\\verify-pw"
