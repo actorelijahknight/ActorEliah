@@ -611,6 +611,18 @@ main {
   color: var(--muted);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
   text-align: center;
+  pointer-events: none;
+}
+
+.video-facade-consent a {
+  color: inherit;
+  text-decoration: underline;
+  pointer-events: auto;
+}
+
+.video-facade-consent a:hover,
+.video-facade-consent a:focus-visible {
+  color: #fff;
 }
 
 .video-facade:hover .video-facade-play,
