@@ -174,4 +174,80 @@
     }
   }
 
+  var CONSENT_STORAGE_KEY = "clarity-consent";
+  var CLARITY_PROJECT_ID = "xlc146pq9z";
+
+  var readConsent = function () {
+    try {
+      return window.localStorage.getItem(CONSENT_STORAGE_KEY);
+    } catch (e) {
+      return null;
+    }
+  };
+
+  var writeConsent = function (value) {
+    try {
+      window.localStorage.setItem(CONSENT_STORAGE_KEY, value);
+    } catch (e) {}
+  };
+
+  var loadClarity = function () {
+    if (window.clarity) return;
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
+  };
+
+  var cookieBanner = document.getElementById("cookie-banner");
+  var cookieAcceptBtn = document.querySelector("[data-cookie-accept]");
+  var cookieRejectBtn = document.querySelector("[data-cookie-reject]");
+  var cookieSettingsBtns = document.querySelectorAll("[data-cookie-settings]");
+
+  var showCookieBanner = function () {
+    if (!cookieBanner) return;
+    cookieBanner.hidden = false;
+    window.requestAnimationFrame(function () {
+      cookieBanner.classList.add("is-visible");
+    });
+  };
+
+  var hideCookieBanner = function () {
+    if (!cookieBanner) return;
+    cookieBanner.classList.remove("is-visible");
+    window.setTimeout(function () {
+      cookieBanner.hidden = true;
+    }, 300);
+  };
+
+  var currentConsent = readConsent();
+
+  if (currentConsent === "accepted") {
+    loadClarity();
+  } else if (currentConsent !== "rejected") {
+    showCookieBanner();
+  }
+
+  if (cookieAcceptBtn) {
+    cookieAcceptBtn.addEventListener("click", function () {
+      writeConsent("accepted");
+      loadClarity();
+      hideCookieBanner();
+    });
+  }
+
+  if (cookieRejectBtn) {
+    cookieRejectBtn.addEventListener("click", function () {
+      writeConsent("rejected");
+      hideCookieBanner();
+    });
+  }
+
+  cookieSettingsBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      showCookieBanner();
+    });
+  });
+
 })();

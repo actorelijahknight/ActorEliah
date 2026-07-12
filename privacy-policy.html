@@ -44,7 +44,10 @@
     <main>
       <section class="page-hero plain-hero">
         <h1>Privacy Policy</h1>
-        <p>This site is intentionally minimal: no cookies, no analytics, and no tracking scripts of any kind.</p>
+        <p>
+          This website loads no cookies or tracking scripts by default. An optional, consent-based analytics tool
+          (Microsoft Clarity) can be switched on via the cookie banner — see "Cookies &amp; analytics" below.
+        </p>
       </section>
 
       <section class="sections-grid" aria-label="Privacy policy details">
@@ -53,6 +56,26 @@
           <p>
             Knight TV GmbH, Museumstrasse 21, 7260 Davos Dorf, Switzerland.<br />
             Contact: <a class="footer-email" href="mailto:actorelijahknight@gmail.com">actorelijahknight@gmail.com</a>
+          </p>
+        </article>
+
+        <article class="section-card">
+          <h2>Cookies &amp; analytics</h2>
+          <p>
+            By default, no cookies or analytics scripts run on this website. On first visit, a cookie banner asks
+            for consent to use Microsoft Clarity, an analytics tool that helps understand how the site is used so
+            it can be improved. No Clarity script or cookie loads until "Accept" is selected in the banner.
+            Choosing "Reject", or leaving the banner unanswered, keeps Clarity switched off entirely. This choice
+            can be changed at any time via "Cookie Settings" in the footer of any page.
+          </p>
+          <p>
+            When consent is given, Microsoft Clarity (operated by Microsoft) collects anonymized usage data such
+            as pages visited, clicks, scroll behavior, and device or browser information, and may process this
+            data as described in the
+            <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy Statement</a>.
+            The legal basis for this processing is consent (Art. 6(1)(a) GDPR / Swiss FADP). Consent can be
+            withdrawn at any time via "Cookie Settings" in the footer; once withdrawn, no further data is sent to
+            Microsoft Clarity from that browser.
           </p>
         </article>
 
@@ -122,11 +145,36 @@
             <a href="legal-notice.html">Legal Notice</a>
             <span aria-hidden="true">·</span>
             <a href="privacy-policy.html">Privacy Policy</a>
+            <span aria-hidden="true">·</span>
+            <button type="button" class="footer-legal-btn" data-cookie-settings>Cookie Settings</button>
           </div>
         </div>
         <a class="footer-email" href="mailto:actorelijahknight@gmail.com">actorelijahknight@gmail.com</a>
       </div>
+      <p class="footer-cookie-note">
+        With consent, this website uses Microsoft Clarity to see how the site is used so it can be improved —
+        Microsoft may also process this data, as described in the
+        <a href="privacy-policy.html">Privacy Policy</a>. This choice can be changed anytime via Cookie Settings
+        above, or by contacting
+        <a class="footer-email" href="mailto:actorelijahknight@gmail.com">actorelijahknight@gmail.com</a>.
+      </p>
     </footer>
+
+    <div class="cookie-banner" id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent" hidden>
+      <div class="cookie-banner-inner">
+        <p class="cookie-banner-text">
+          With consent, this website uses Microsoft Clarity to understand how visitors use the site so it can be
+          improved — Microsoft may also process this data, as described in the
+          <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer">Microsoft Privacy Statement</a>.
+          This choice can be changed anytime via Cookie Settings in the footer, or by reading the
+          <a href="privacy-policy.html">Privacy Policy</a>.
+        </p>
+        <div class="cookie-banner-actions">
+          <button type="button" class="btn" data-cookie-reject>Reject</button>
+          <button type="button" class="btn btn-primary" data-cookie-accept>Accept</button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
     <script>
