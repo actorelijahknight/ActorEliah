@@ -1120,6 +1120,10 @@ main {
     align-items: stretch;
   }
 
+  .cookie-banner-text {
+    flex: 1 1 auto;
+  }
+
   .cookie-banner-actions {
     justify-content: flex-end;
   }
